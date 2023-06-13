@@ -14,40 +14,37 @@ def first_odds():
 print(first_odds())
 
 def max_num_in_list(a_list):
-    return x
-number= list(range(1,7))
-for x in number:
-    print(max(number))
-    break
+    
+    return max(a_list)
+
+max_num_in_list([1,2,5,3])
 
 def is_leap_year(a_year):
-    return a_year
-
-x = int(input("Is this year a Leap Year?: "))
-
-if ((x%4==0) and (x%100!=0)) is True: 
-    print("\nThe year is a leap year!")
     
-elif (x%400==0) is True:
-    print("\nThe year is a leap year!")
-else:
-    print("\nThis is NOT a leap year") 
-    
-print(is_leap_year(x))
 
+        a_year = int(input("Is this year a Leap Year?: "))
+        x=a_year
+
+        if ((x % 4==0) and (x % 100!=0)) is True: 
+         print("\nThe year is a leap year!")
+    
+        elif (x % 400==0) is True:
+         print("\nThe year is a leap year!")
+        else:
+            print("\nThis is NOT a leap year") 
+
+is_leap_year(0)
 
 
 
 
 
 def is_consecutive(a_list):
-    return (a_list)
-a_list = [1,2,3,4]
-for numbers in a_list:
-        if a_list == list(range(1,6)):
-            print("Consecutive")
-        else:
-            print("Not Consecutive")
+    my_list=sorted(a_list)
+    if my_list == list(range(min(a_list),max(a_list)+1)):
+        print("Consecutive")
+    else:
+        print("Not Consecutive")
 
-print(is_consecutive(a_list))
+is_consecutive([1,2,4,5])
 
